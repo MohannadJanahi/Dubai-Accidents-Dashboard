@@ -2,8 +2,7 @@
 
 An interactive dashboard for exploring traffic accident patterns in Dubai — built to help identify when, where, and how severely accidents cluster across the city, to support road safety analysis and resource planning.
 
-![Dashboard preview](docs/preview.png)
-*(add a screenshot or short GIF of the map with filters applied)*
+<img width="1915" height="567" alt="Screenshot from 2026-06-29 00-24-38" src="https://github.com/user-attachments/assets/e9818dd4-435f-4e4a-9800-736676b75660" />
 
 ## Problem
 
@@ -23,10 +22,6 @@ Traffic accident data on its own is just rows in a spreadsheet — it doesn't re
 Source: [Dubai Pulse — Traffic Incidents](https://www.dubaipulse.gov.ae/data/dp-traffic/dp_traffic_incidents-open)
 
 By default, the dashboard uses a bundled local CSV snapshot (`Datasets/Accidents.csv`) for offline and reproducible use. Pass `--online` to fetch the latest data from Dubai Pulse instead. Each record includes incident time, location coordinates, and a severity classification (the raw severity field is bilingual — Arabic/English — and is normalized during preprocessing).
-
-## Results / Insights
-
-*(Add 2-3 sentences here on what you actually noticed using the dashboard — e.g. which time periods or areas show the most incidents, or how the high vs. low severity split looks across the city. This is the part that turns it from "a dashboard" into "an analysis," so it's worth filling in before this is finished.)*
 
 ## How to Run
 
