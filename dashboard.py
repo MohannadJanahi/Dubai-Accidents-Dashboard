@@ -4,7 +4,6 @@ import argparse
 from pathlib import Path
 
 import dash
-import geopandas as gpd
 import pandas as pd
 import plotly.express as px
 from dash import Input, Output, dcc, html
@@ -54,10 +53,6 @@ def load_and_prepare_data(source: str) -> pd.DataFrame:
     df["year"] = df["acci_time"].dt.year
     df["month"] = df["acci_time"].dt.month
     df["day"] = df["acci_time"].dt.day
-
-    gpd.GeoDataFrame(
-        df,
-        geometry=gpd.points_from_xy(df.acci_y, df.acci_x),
     )
     return df
 
